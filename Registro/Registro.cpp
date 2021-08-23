@@ -13,10 +13,12 @@ int main(int argc, char const *argv[])
 {
     datos personas[10];
 
-    string nombre = "lucas";
+    string nombre = "nombre";
     for (int i = 0; i < 10; i++)
     {
-        personas[i].nombre = "LUCAS";
+        personas[i].nombre = "Nombre";
+        personas[i].apellido = "Apellido";
+        personas[i].edad = 15;
     }
     if (stricmp(personas[0].nombre.c_str(), nombre.c_str()) == 0)
     {
