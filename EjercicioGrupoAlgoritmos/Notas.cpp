@@ -17,14 +17,14 @@ double promedioGlobales(double promedio)
     return promedio * .6;
 }
 
-double notasCambiadasParcial(double nota, int numero)
+double notasParcial(double nota, int numero)
 {
     cout << "Ingrese la nota " << numero << " del parcial\n";
     cin >> nota;
     return nota;
 }
 
-double notasCambiadasGlobal(double nota, int numero)
+double notasGlobal(double nota, int numero)
 {
     cout << "Ingrese la nota " << numero << " del global\n";
     cin >> nota;
@@ -49,12 +49,12 @@ string promediar(double promedio)
 
 void notas()
 {
-    double nota1P = notasCambiadasParcial(nota1P, 1);
-    double nota2P = notasCambiadasParcial(nota2P, 2);
-    double nota3P = notasCambiadasParcial(nota3P, 3);
-    double nota1G = notasCambiadasGlobal(nota1G, 1);
-    double nota2G = notasCambiadasGlobal(nota2G, 2);
-    double nota3G = notasCambiadasGlobal(nota3G, 3);
+    double nota1P = notasParcial(nota1P, 1);
+    double nota2P = notasParcial(nota2P, 2);
+    double nota3P = notasParcial(nota3P, 3);
+    double nota1G = notasGlobal(nota1G, 1);
+    double nota2G = notasGlobal(nota2G, 2);
+    double nota3G = notasGlobal(nota3G, 3);
     double parciales = promedioNotas(nota1P, nota2P, nota3P);
     double globales = promedioNotas(nota1G, nota2G, nota3G);
     double promedio = promedioParciales(parciales) + promedioGlobales(globales);
