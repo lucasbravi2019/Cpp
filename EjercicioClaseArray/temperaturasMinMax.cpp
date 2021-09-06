@@ -27,15 +27,18 @@ int main(int argc, char const *argv[])
         {
             if (j == 0)
             {
-                cout << "Minima: " << temperaturasMinMax[i][j] << "\n";
+                cout << "Minima: " << temperaturasMinMax[i][j] << " C"
+                     << "\n";
             }
             if (j == 1)
             {
-                cout << "Maxima: " << temperaturasMinMax[i][j] << "\n";
+                cout << "Maxima: " << temperaturasMinMax[i][j] << " C"
+                     << "\n";
             }
             suma = temperaturasMinMax[i][0] + temperaturasMinMax[i][1];
         }
-        cout << "El promedio del dia es: " << suma / 2 << "\n";
+        cout << "El promedio del dia es: " << suma / 2 << " C"
+             << "\n";
     }
 
     return 0;

@@ -19,7 +19,8 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < *(&temperaturas + 1) - temperaturas; i++)
     {
         float temperatura = rand() % 40;
-        cout << temperatura << "\n";
+        cout << "La temperatura del dia es: " << temperatura << " C"
+             << "\n";
         temperaturas[i] = temperatura;
     }
 
@@ -31,7 +32,7 @@ int main(int argc, char const *argv[])
         contador += 1;
     }
 
-    cout << "El promedio de temperatura del mes es de: " << (suma / contador) << "°C\n";
+    cout << "El promedio de temperatura del mes es de: " << (suma / contador) << " C\n";
 
     return 0;
 }
